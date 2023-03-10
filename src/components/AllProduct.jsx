@@ -3,15 +3,37 @@ import "../style/add.css";
 export default function AllProduct() {
   return (
     <div>
-      <div className="table">
-        <h3>img </h3>
-        <h3>Name</h3>
-        <h3>Price</h3>
-        <h3>Brand</h3>
-        <h3>Category</h3>
-        <h3>Sale</h3>
-        <h3>Options</h3>
-      </div>
+      <table className="table">
+        <tr>
+          <td>img</td>
+          <td>Name</td>
+          <td>Price</td>
+          <td>Brand</td>
+          <td>Category</td>
+          <td>Sale</td>
+          <td>Options</td>
+        </tr>
+
+        <tbody>
+          {data &&
+            data.map((pro) => {
+              <tr className=" table tableNames">
+                <td>
+                  <img src={pro.image} alt="" className="proImage" />
+                </td>
+                <td>{pro.name}</td>
+                <td>{pro.price}</td>
+                <td>{pro.Brand}</td>
+                <td>{pro.Category}</td>
+                <td>{pro.Sale}</td>
+                <td>
+                  <button className="Edit">Edit</button>/
+                  <button className="delete">delete</button>
+                </td>
+              </tr>;
+            })}
+        </tbody>
+      </table>
     </div>
   );
 }

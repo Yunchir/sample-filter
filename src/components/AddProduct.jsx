@@ -5,10 +5,23 @@ export default function Add() {
         <input type="text" placeholder="Name" />
         <input type="text" placeholder="Price" />
         <input type="text" placeholder="Image" />
-        <input type="text" placeholder="Brand" />
+        <select name="cars" id="cars">
+          <option value="volvo">Samsung</option>
+          <option value="saab">LG</option>
+          <option value="opel">Apple </option>
+          <option value="audi">Sony</option>
+          <option value="audi">Dell</option>
+          <option value="audi">Other</option>
+        </select>
       </div>
       <div>
-        <input type="text" placeholder="Category" />
+        <select name="cars" id="cars">
+          <option value="volvo">Phone & Tablet</option>
+          <option value="saab">TV</option>
+          <option value="opel">Laptop </option>
+          <option value="audi">Headphone</option>
+          <option value="audi">Other</option>
+        </select>
         <button>Add+</button>
       </div>
       <h2>Add Categoty</h2>
