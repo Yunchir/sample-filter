@@ -1,8 +1,25 @@
 .table {
-  display: flex;
   margin: 20px;
 }
 
-.table h3 {
-  margin-right: 30px;
+.tableNames {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit {
+  background-color: none;
+  border: none;
+  color: #333;
+}
+
+.delete {
+  border: none;
+  color: rgb(231, 92, 92);
+  background-color: none;
+}
+
+.delete:hover {
+  color: rgb(255, 0, 0);
+  background-color: none;
 }
